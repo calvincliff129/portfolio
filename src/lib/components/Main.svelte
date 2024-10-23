@@ -1,40 +1,35 @@
 <script lang="ts">
-  import Step from "./Step.svelte";
+  import Product from "./Project.svelte";
 
-  let contactLink: string = "www.linkedin.com/in/calvincliff2129";
+  let contactLink: string = "https://www.linkedin.com/in/calvincliff2129";
 
   type Steps = {
     name: string;
     icon: string;
+    href: string;
   }[];
   type Benefits = {
     name: string;
     description: string;
   }[];
 
-  let steps: Steps = [
-    { name: "SomeMy Store", icon: "fa-solid fa-cart-shopping" },
-    { name: "Ultimate Todos", icon: "fa-solid fa-list-check" },
-    { name: "Mydex", icon: "fa-solid fa-diagram-project" },
-  ];
-
   let benefits: Benefits = [
-    { name: "", description: "" },
-    { name: "", description: "" },
-    { name: "", description: "" },
+    { name: "To be added soon..", description: "Some description about me~" },
+    { name: "To be added soon..", description: "Some description about me~" },
+    { name: "To be added soon..", description: "Some description about me~" },
   ];
 </script>
 
 <main class="flex flex-col flex-1 p-4">
   <section
     id="introPage"
-    class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14"
+    class="grid grid-cols-1 md:grid-cols-2 gap-10 py-8 sm:py-14 place-items-center"
   >
     <div
-      class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
+      class="flex flex-col md:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
     >
       <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
-        Hi! I'm <span class="text-violet-400 poppins">Calvin</span> Cliff
+        Hi! I'm <span class="text-violet-400 poppins">Calvin</span> Cliff.
         <br />Front-End
         <span class="poppins text-violet-400">Developer</span>
       </h2>
@@ -53,64 +48,15 @@
         <h4 class="relative z-9">Get in touch &rarr;</h4>
       </a>
     </div>
-    <div class="relative shadow-2xl grid place-items-center">
-      <span class="text-violet-400"
-        >There's something here, <br /> you just can't see it XD</span
-      >
-      <img
-        src="/images/hero-image.png"
-        alt="ProfileImage"
-        class="object-cover z-[2] max-h-[70vh]"
-      />
-    </div>
+    <object
+      class="relative w-full shadow-2xl grid max-md:order-first max-md:max-w-[300px] max-md:max-h-[300px] max-w-[500px] max-h-[500px]"
+      title="Profile"
+      data="assets/images/man-developing-website-on-desk.svg"
+    >
+    </object>
   </section>
   <section id="projects" class="py-20 lg:py-32 flex flex-col gap-24">
-    <div class="flex flex-col gap-2 text-center">
-      <h6 class="text-lg sm:text-xl md:text-2xl">
-        A few of my creative projects
-      </h6>
-      <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
-        Curious to <span class="poppins text-violet-400">see</span> my work?
-      </h3>
-    </div>
-    <a
-      href="/"
-      target="_blank"
-      class="mx-auto px-4 py-2 rounder-md border border-solid border-white flex items-center gap-2 -mb-4 sm:-mb-0 -mt-10 hover:border-violet-700 duration-200"
-    >
-      <i class="fa-regular fa-circle-play" />
-      <p>Watch the video</p></a
-    >
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
-      <Step step={steps[0]}>
-        <p>
-          Store is a merchandising store created with <strong
-            class="text-violet-400"
-            >Next.js Commerce.js Stripes & Node.js + Express.js & Firebase</strong
-          > CRUD application that allows a user to login, Commerce.js is as product
-          CMS and Stripe is used for all transaction handling.
-        </p>
-      </Step>
-      <Step step={steps[1]}>
-        <p>
-          Ultimate Todos is a Stack <strong class="text-violet-400"
-            >Next.js Commerce.js Stripes & Node.js + Express.js & Firebase</strong
-          > CRUD application that allows a user to login, manage a tidy and efficacious
-          todo list, and persist this information across all devices.
-        </p>
-      </Step>
-      <Step step={steps[2]}>
-        <p>
-          The Mydex is a <strong class="text-violet-400"
-            >Svelekit & TailwindCSS</strong
-          >
-          web application, hosted on
-          <strong class="text-violet-400">Netlify</strong>, that consumes and
-          caches the <strong class="text-violet-400">Pokemon API</strong> to display
-          all Pokemon information. Gotta catch em all!
-        </p>
-      </Step>
-    </div>
+    <Product />
   </section>
   <section
     id="about"
@@ -137,14 +83,14 @@
           </p>
           <div class="flex flex-col gap-6 sm:gap-8">
             <h3 class="text-2xl sm:text-3xl md:text-5xl">
-              {benefit.description}
+              {benefit.name}
             </h3>
             <p>{benefit.description}</p>
           </div>
         </div>
       {/each}
     </div>
-    <h5 class="text-2xl sm:text-3xl font-semibold text-center poppins">
+    <!-- <h5 class="text-2xl sm:text-3xl font-semibold text-center poppins">
       The <span class="text-violet-400 poppins">Complete</span> Package
     </h5>
     <div
@@ -208,6 +154,6 @@
     </div>
     <div class="mx-auto -mt-12 italic sm:hidden opacity-50">
       <p>Scroll to see more &rarr;</p>
-    </div>
+    </div> -->
   </section>
 </main>
