@@ -4,10 +4,13 @@
   <p class="px-4 py-2 bg-white text-slate-950 font-medium">
     Connect with me &rarr;
   </p>
-  <div class="flex flex-col gap-4 items-center justify-center">
-    <p><b class="pr-2">Email</b> calvincliff129@gmail.com</p>
+  <div class="flex flex-col gap-4 items-start justify-center">
     <p>
-      <b class="pr-2">LinkedIn</b>
+      <i class="fa-solid fa-envelope pr-2"></i>
+      calvincliff129@gmail.com
+    </p>
+    <p>
+      <i class="fa-brands fa-linkedin pr-2"></i>
       <a href="/" class="text-violet-400" target="_blank">
         calvincliff129<sup
           ><span class="text-xs scale-75 pl-0.5">
@@ -19,7 +22,7 @@
       >
     </p>
     <p>
-      <b class="pr-2">Github</b>
+      <i class="fa-brands fa-github pr-2"></i>
       <a href="/" class="text-violet-400" target="_blank">
         calvincliff129<sup
           ><span class="text-xs scale-75 pl-0.5">
