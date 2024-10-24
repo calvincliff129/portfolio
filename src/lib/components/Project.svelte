@@ -45,6 +45,17 @@
       href: "https://verifymyhelper.com/",
     },
     {
+      name: "Muraloca",
+      featureList: [
+        "Built with Angular + .NET",
+        "Mural gallery and management web app",
+        "Locates and stores mural information around the city",
+      ],
+      description: "",
+      imgUrl: "assets/images/projects/muraloca-page-1.png",
+      href: "",
+    },
+    {
       name: "Argus",
       featureList: [
         "Built with SvelteKit + .NET + SignalR",
@@ -54,18 +65,7 @@
       ],
       description: "",
       imgUrl: "assets/images/projects/argus.png",
-      href: "https://verifymyhelper.com/",
-    },
-    {
-      name: "Muraloca",
-      featureList: [
-        "Built with Angular + .NET",
-        "Mural gallery and management web app",
-        "Locates and stores mural information around the city",
-      ],
-      description: "",
-      imgUrl: "assets/images/projects/muraloca-page-1.png",
-      href: "https://verifymyhelper.com/",
+      href: "",
     },
   ];
 </script>
@@ -96,15 +96,15 @@
           >trustworthy</span
         >, dependable helper
       {:else if index === 3}
+        Boosts cultural <span class="text-violet-400 font-medium"
+          >appreciation</span
+        > and community engagement
+      {:else}
         Tailored urban <span class="text-violet-400 font-medium"
           >monitoring
         </span>
         and analytics for better city
         <span class="text-violet-400 font-medium">oversight</span>
-      {:else}
-        Boosts cultural <span class="text-violet-400 font-medium"
-          >appreciation</span
-        > and community engagement
       {/if}
     </ProjectCard>
   {/each}
