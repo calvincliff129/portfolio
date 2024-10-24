@@ -4,7 +4,7 @@
 </script>
 
 <div
-  class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-12 relative text-base max-lg:place-items-center"
+  class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:gap-14 relative text-base max-lg:place-items-center"
 >
   <div
     class={"flex flex-col gap-8 md:gap-10 pt-8 sm:pt-10 " +
@@ -31,7 +31,10 @@
         </div>
       {/each}
     </div>
-    <div class="flex-1 flex justify-between gap-4 items-center">
+    <div
+      class={"flex-1 pl-2 flex justify-between gap-4 items-center " +
+        (index === 3 || index === 4 ? " hidden" : " ")}
+    >
       <a
         href={project.href}
         target="_blank"
