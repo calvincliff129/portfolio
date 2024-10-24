@@ -14,9 +14,23 @@
   }[];
 
   let benefits: Benefits = [
-    { name: "To be added soon..", description: "Some description about me~" },
-    { name: "To be added soon..", description: "Some description about me~" },
-    { name: "To be added soon..", description: "Some description about me~" },
+    {
+      name: "A CS graduate, self-taught developer.",
+      description: `While I earned my degree in computer science, my current expertise comes from diving deep into new languages, 
+      frameworks, and web architecture on my own using online resources, and quickly became fascinated with the creativity and 
+      problem-solving involved in developing innovative online experiences. My knowledge grows from practical problem-solving and 
+      continuous self-learning in areas that go far beyond my formal education.`,
+    },
+    {
+      name: "Passionate about turning concepts into reality",
+      description: `I love translating designs into clean, functional code. 
+      I take pride in making sure everything runs smoothly and efficiently, ensuring a seamless user experience that resonate with users.`,
+    },
+    {
+      name: "A focused and process-oriented thinker",
+      description: `I enjoy simplifying the complex, turning tangled problems into straightforward solutions that keep 
+      projects flowing smoothly and deliver outstanding results.`,
+    },
   ];
 </script>
 
