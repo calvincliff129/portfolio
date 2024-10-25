@@ -58,13 +58,9 @@
       {/each}
     </div>
     <div
-      class="flex flex-col bg-violet-1000 gap-4 flex-1 p-2 justify-start lg:justify-center items-center"
+      class="flex flex-col bg-violet-1000 gap-4 flex-1 p-1 justify-start lg:justify-center items-center"
     >
-      <img
-        class="rounded-lg blueShadow"
-        src={project.imgUrl}
-        alt="project-img"
-      />
+      <img class="rounded blueShadow" src={project.imgUrl} alt="project-img" />
     </div>
   </div>
 </div>
