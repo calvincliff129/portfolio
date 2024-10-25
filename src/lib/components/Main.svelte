@@ -18,7 +18,7 @@
       name: "A CS graduate, self-taught developer.",
       description: `While I earned my degree in computer science, my current expertise knowledge grows from diving deep into new languages, 
       frameworks, and web architecture on my own using online resources, and quickly became fascinated with the creativity and 
-      problem-solving involved in developing innovative online experiences. --continuous self-learning in areas that go far beyond my formal education.`,
+      problem-solving involved in developing innovative online experiences. - - continuous self-learning in areas that go far beyond my formal education.`,
     },
     {
       name: "Passionate about turning concepts into reality",
